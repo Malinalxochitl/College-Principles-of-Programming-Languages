@@ -1,0 +1,6 @@
+male(albert).
+female(alice).
+male(edward).
+female(victoria).
+parents(edward,victoria,albert).
+parents(alice,victoria,albert).
