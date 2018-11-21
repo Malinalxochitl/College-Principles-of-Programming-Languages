@@ -1,0 +1,15 @@
+(define (firstNon0 exp1 exp2 exp3)
+  (cond ((not (zero? exp1)) exp1)
+        ((not (zero? exp2)) exp2)
+        ((not (zero? exp3)) exp3)
+        (else 0)))
+
+(define (tribonacci n)
+  (cond ((equal? n 0) 0)
+        ((equal? n 1) 0)
+        ((equal? n 2) 1)
+        (else (trib-help 0 0 1 3 n))))
+
+(define (trib-help t0 t1 t2 cur end)
+  (cond ((>= cur end) (+ t0 (+ t1 t2)))
+        (else (trib-help t1 t2 (+ t0 (+ t1 t2)) (+ cur 1) end))))

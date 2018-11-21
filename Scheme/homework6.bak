@@ -1,0 +1,8 @@
+(define (firstNon0 exp1 exp2 exp3)
+  (cond ((zero? exp1) '()
+                      exp1)
+        ((zero? exp2) '()
+                      exp2)
+        ((zero? exp3) '()
+                      exp3)
+        (else 0)))
